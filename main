@@ -1,0 +1,23 @@
+# thuchanhb2
+package bai1;
+
+public class main {
+    public static void main(String[] args) {
+        Account account1 = new Account(); // create an account with default values
+        Account account2 = new Account(123456, "Dang Duy Phuong", 9999); // create an account with specified values
+         System.out.println(account2.toString()); // print account information
+        Account account3 = new Account(797979, "Nguyen Thi Trang", 2500);      
+        System.out.println(account3.toString()); // print account information
+        Account account4 = new Account(777777, "Le Thi Vy", 1234);
+         System.out.println(account4.toString()); // print account information
+        Account account5 = new Account(999999, "Nguyen Quang Lam", 5678);
+        System.out.println(account5.toString()); // print account information
+
+        // test set methods
+        account1.setAccountNumber(-1); // invalid account number, should set to default
+        account1.setAccountName(""); // invalid account name, should set to default
+        account1.setBalance(40); // invalid balance, should set to default
+
+        System.out.println(account1.toString()); // print account information
+    }
+}
